@@ -32,7 +32,7 @@ GcGSGcJxAaC)AkAQAkC)AaAQAkAaAQC<AaC)AkAaAQC)AkAaAQAaAkC)AaAaAaAaAaAaAaAaAGAkAaAQ
  */
 
 /*
- * 在Ken Shirriff的代码基础上新增HAA编码方法
+ * 在Ken Shirriff的代码基础上新增解码类型
  * 
  * 使用前修改IRremote库代码，修改IRremoteInt.h文件
  * 将RAW_BUFFER_LENGTH调整为300，如果使用的Arduino设备内存更大此处的值可以调的更高，以便接受更大的数据包。
