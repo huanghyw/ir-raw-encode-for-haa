@@ -15,10 +15,9 @@ if __name__ == '__main__':
             print(f"您的输入为空，请重新输入！")
             continue
         try:
-            raw_code_array = str.split(raw_code)
-            raw_code_int_array = [abs(int(v)) for v in raw_code_array]
+            raw_code_index_array = [abs(int(int(v) / 5)) for v in str.split(raw_code)]
 
-            haa_encode_result = "".join([haa_table[int(v / 5)] for v in raw_code_int_array])
+            haa_encode_result = "".join([haa_table[i] for i in raw_code_index_array])
             print(f"HAA Encode:{haa_encode_result}")
 
         except Exception as e:
